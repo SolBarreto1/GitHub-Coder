@@ -7,9 +7,9 @@ body{
     height: 100px;
     background-color: antiquewhite;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 .logo {
@@ -47,7 +47,6 @@ body{
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(75, 45, 7);
-
 }
 
 .banner img {
@@ -107,12 +106,13 @@ main {
 
 .container{
     padding: 20px;
+    border-radius: 10px;
 }
 
 .quienes {
     border-radius: 10px;
-
 }
+
 .tituloeditoriales {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(204, 129, 31);
@@ -120,8 +120,6 @@ main {
     text-align: center;
 
 }
-
-
 
 .principefeliz {
     height: auto;
@@ -142,24 +140,21 @@ main {
     border-radius: 10px;
 }
 
-.botonsuscribir{
-    background-color: #796833; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.3);
-    font-family: cursive;
-}
-
 #map {
     height: 400px;
     width: 100%;
+}
+
+.boton-suscribir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item :active{
+    width: 50%; /* Ajusta el tamaño al 50% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 
