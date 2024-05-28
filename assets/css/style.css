@@ -96,8 +96,7 @@ main {
 }
 
 .columna {
-    flex: 1; /* Las columnas ocuparán el mismo espacio */
-    /* border: 1px solid black; */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,11 +150,7 @@ main {
     justify-content: center;
 }
 
-.carousel-item :active{
-    width: 50%; /* Ajusta el tamaño al 50% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-}
+
 
 
 
