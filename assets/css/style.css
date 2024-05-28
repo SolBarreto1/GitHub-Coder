@@ -1,0 +1,166 @@
+body{
+    margin: auto;
+}
+
+
+.navbar{
+    height: 100px;
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;
+    display: inline-block; 
+    vertical-align: middle;
+    width: 70px;
+    border: 5px solid;
+    border-radius: 46px;
+    border-color: #a7793b;
+}
+
+.botonesheader {
+    display: inline-block;
+    margin-right: 380px;
+
+}
+
+.botonesheader ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.botonesheader ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.botonesheader ul li:last-child {
+    margin-right: 20px; 
+}
+
+.botonesheader ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(75, 45, 7);
+
+}
+
+.banner img {
+    width: 100%; 
+    display: block;
+    height: 350px;
+}
+
+footer {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactos {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contactos a {
+    display: block; /* Hacer que cada enlace ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio entre los enlaces */
+    margin-top: -3px; /* Levantar el texto un poco */
+}
+
+.contactos i {
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+footer p {
+    margin: 0; /* Eliminar margen superior e inferior del párrafo */
+}
+
+main {
+    margin-bottom: 30px; /* Para dar espacio al footer */
+}
+
+.titulo {
+    color: rgb(204, 129, 31);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.row {
+    display: flex; /* Esto hará que los elementos hijos estén en una fila */
+}
+
+.columna {
+    flex: 1; /* Las columnas ocuparán el mismo espacio */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    padding: 20px;
+}
+
+.quienes {
+    border-radius: 10px;
+
+}
+.tituloeditoriales {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(204, 129, 31);
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+
+
+.principefeliz {
+    height: auto;
+    width: 165px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.addie {
+    height: auto;
+    width: 178px;
+    border-radius: 10px;
+}
+
+.libromosca {
+    height: auto;
+    width: 145px;
+    border-radius: 10px;
+}
+
+.botonsuscribir{
+    background-color: #796833; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.3);
+    font-family: cursive;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+
