@@ -1,21 +1,20 @@
-body{
+
+body {
     margin: auto;
 }
 
-
-.navbar{
+.navbar {
     background-color: #F0B27A;
     width: 100%;
-
 }
 
-.nav-link{
-    color: rgb(75, 45, 7)!important;
+.nav-link {
+    color: rgb(75, 45, 7) !important;
 }
 
 .logo {
     margin-left: 50px;
-    display: inline-block; 
+    display: inline-block;
     vertical-align: middle;
     width: 70px;
     border: 5px solid;
@@ -24,25 +23,24 @@ body{
 }
 
 .botonesheader {
-    display: inline-block;
-    margin-right: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
 }
 
 .botonesheader ul {
-    margin: 0; 
-    padding: 0; 
-    list-style: none; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botonesheader ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.botonesheader ul li:last-child {
-    margin-right: 20px; 
+    margin-bottom: 10px;
 }
 
 .botonesheader ul li a {
@@ -52,29 +50,27 @@ body{
 }
 
 .banner img {
-    width: 100%; 
+    width: 100%;
     display: block;
-    height: 350px;
+    height: auto;
 }
 
 footer {
-background-color: #F0B27A;
+    background-color: #F0B27A;
     padding: 20px;
     text-align: center;
 }
 
 .contactos {
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
-    
 }
 
 .contactos a {
-    display: block;
-    margin-bottom: 5px; 
-    margin-top: -3px;
+    display: inline-block;
+    margin: 5px;
     text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(146, 92, 11);
     font-size: smaller;
     font-style: oblique;
@@ -97,53 +93,84 @@ main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-top: -30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.columna {
-    flex: 1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.textoquienessomos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding: 15px;
 }
 
-.quienes {
-    border-radius: 10px;
-}
-
-.div-editoriales{
-    padding-top: 0px;
+.gente {
+    padding: 50px 15px;
 }
 
 .tituloeditoriales {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(204, 129, 31);
-    margin-left: 10px;
-    text-align: center;
-
+    padding-top: 25px;
 }
 
-.map {
-    height: 150px;
-    width: 100%;
+@media only screen and (min-width: 768px) {
+    header {
+        display: block;
+    }
 
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .botonesheader {
+        flex-direction: row;
+    }
+
+    .botonesheader ul {
+        flex-direction: row;
+    }
+
+    .botonesheader ul li {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .botonesheader ul li:last-child {
+        margin-right: 0;
+    }
+
+    .banner img {
+        height: 350px;
+    }
+
+    .textoquienessomos {
+        padding: 55px 15px;
+    }
+
+    .gente {
+        padding: 50px 120px;
+    }
+
+    .imgeditoriales {
+        height: 400px;
+    }
 }
 
-.boton-suscribir{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media only screen and (min-width: 992px) {
+    .botonesheader {
+        margin-right: 380px;
+    }
 
+    .textoquienessomos {
+        padding-left: 55px;
+    }
 }
 
-.imgeditoriales{
-    height: 400px;
+@media only screen and (max-width: 768px) {
+    .textoquienessomos {
+        font-size: medium;
+        padding: 15px;
+    }
 }
-
-
-
-
-
-
-
-
