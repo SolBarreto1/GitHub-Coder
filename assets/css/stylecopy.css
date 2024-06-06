@@ -1,41 +1,3 @@
-body{
-    margin: auto;
-}
-
-
-.navbar{
-    background-color: #F0B27A;
-    width: 100%;
-
-}
-
-.nav-link{
-    color: rgb(75, 45, 7)!important;
-}
-
-.logo {
-    margin-left: 50px;
-    display: inline-block; 
-    vertical-align: middle;
-    width: 70px;
-    border: 5px solid;
-    border-radius: 46px;
-    border-color: #a7793b;
-}
-
-.botonesheader {
-    display: inline-block;
-    margin-right: 380px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-}
-
-.botonesheader ul {
-    margin: 0; 
-    padding: 0; 
-    list-style: none; 
-}
-
 .botonesheader ul li {
     display: inline-block;
     margin-right: 20px;
@@ -58,7 +20,7 @@ body{
 }
 
 footer {
-background-color: #F0B27A;
+    background-color: antiquewhite;
     padding: 20px;
     text-align: center;
 }
@@ -66,30 +28,24 @@ background-color: #F0B27A;
 .contactos {
     text-align: left;
     margin-bottom: 10px;
-    
 }
 
 .contactos a {
-    display: block;
-    margin-bottom: 5px; 
-    margin-top: -3px;
-    text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(146, 92, 11);
-    font-size: smaller;
-    font-style: oblique;
+    display: block; /* Hacer que cada enlace ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio entre los enlaces */
+    margin-top: -3px; /* Levantar el texto un poco */
 }
 
 .contactos i {
-    font-size: 24px;
+    font-size: 24px; /* Tamaño de los iconos */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* Eliminar margen superior e inferior del párrafo */
 }
 
 main {
-    margin-bottom: 15px;
+    margin-bottom: 30px; /* Para dar espacio al footer */
 }
 
 .titulo {
@@ -97,6 +53,10 @@ main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-top: -30px;
+}
+
+.row {
+    display: flex; /* Esto hará que los elementos hijos estén en una fila */
 }
 
 .columna {
@@ -107,12 +67,13 @@ main {
     flex-direction: column;
 }
 
-.quienes {
+.container{
+    padding: 20px;
     border-radius: 10px;
 }
 
-.div-editoriales{
-    padding-top: 0px;
+.quienes {
+    border-radius: 10px;
 }
 
 .tituloeditoriales {
@@ -123,25 +84,35 @@ main {
 
 }
 
-.map {
-    height: 150px;
-    width: 100%;
+.principefeliz {
+    height: auto;
+    width: 165px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
 
+.addie {
+    height: auto;
+    width: 178px;
+    border-radius: 10px;
+}
+
+.libromosca {
+    height: auto;
+    width: 145px;
+    border-radius: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
 
 .boton-suscribir{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
-.imgeditoriales{
-    height: 400px;
-}
-
-
-
 
 
 

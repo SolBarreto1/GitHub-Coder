@@ -10,59 +10,61 @@
     <div class="modal show" style="display: block;" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                    <h5 class="modal-title">Suscribirme a Seshat</h5>
-                    <a href="../index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
-            </div>
+                <div class="modal-header">
+                        <h5 class="modal-title">Suscribirme a Seshat</h5>
+                        <a href="../index.html" class="ms-auto"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                </div>
                 <div class="modal-body">
                     <form class="row g-3">
                         <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                            <label for="inputDni" class="form-label">DNI</label>
+                            <input class="form-control" id="inputDni">
                         </div>
                         <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Nombre y Apellido</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                            <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                            <input class="form-control" id="inputNombre">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
                         </div>
                         <div class="col-12">
-                        <label for="inputAddress" class="form-label">Domicilio</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Buenos Aires">
+                            <label for="inputDomicilio" class="form-label">Domicilio</label>
+                            <input type="text" class="form-control" id="inputDomicilio" placeholder="Buenos Aires">
                         </div>
                         <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Celular</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="+54 12345678">
+                            <label for="inputAddress2" class="form-label">Celular</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="+54 12345678">
                         </div>
                         <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Método de pago</label>
-                        <input type="text" class="form-control" id="inputCity">
+                            <label for="inputCity" class="form-label">Método de pago</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Crédito</option>
+                                <option>Transferencia</option>
+                                <option>Débito</option>
+                            </select>
                         </div>
-                        <div class="col-md-4">
-                        <select id="inputState" class="form-select">
-                            <option selected>Crédito</option>
-                            <option>Transferencia</option>
-                            <option>Débito</option>
-                        </select>
-                        </div>
-                        <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Cuotas</label>
-                        <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                            Deseo recibir notificaciones a mi email
-                            </label>
-                        </div>
+                        <div class="col-md-6">
+                            <label for="inputZip" class="form-label">Cuotas</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>3</option>
+                                <option>6</option>
+                                <option>12</option>
+                            </select>
                         </div>
                         <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                Deseo recibir notificaciones a mi email
+                                </label>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    <a href="../index.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></a>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                 </div>
             </div>
         </div>
