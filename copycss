@@ -1,13 +1,9 @@
-.contactos {
-    i {
-        font-size: 24px;
-    }
+.contactos i {
+    font-size: 24px;
 }
 
-footer {
-    p {
-        margin: 0;
-    }
+footer p {
+    margin: 0;
 }
 
 main {
@@ -42,35 +38,33 @@ main {
 @media only screen and (min-width: 768px) {
     header {
         display: block;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .botonesheader {
         flex-direction: row;
-
-        ul {
-            flex-direction: row;
-
-            li {
-                margin-right: 20px;
-                margin-bottom: 0;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
     }
 
-    .banner {
-        img {
-            height: 350px;
-        }
+    .botonesheader ul {
+        flex-direction: row;
+    }
+
+    .botonesheader ul li {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .botonesheader ul li:last-child {
+        margin-right: 0;
+    }
+
+    .banner img {
+        height: 350px;
     }
 
     .textoquienessomos {
