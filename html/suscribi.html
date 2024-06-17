@@ -5,72 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Suscribi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css"/>
   </head>
-  <body>
-    <div class="modal show" style="display: block;" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                        <h5 class="modal-title">Suscribirme a Seshat</h5>
-                        <a href="../index.html" class="ms-auto"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
-                </div>
-                <div class="modal-body">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <label for="inputDni" class="form-label">DNI</label>
-                            <input class="form-control" id="inputDni">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputNombre" class="form-label">Nombre y Apellido</label>
-                            <input class="form-control" id="inputNombre">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputDomicilio" class="form-label">Domicilio</label>
-                            <input type="text" class="form-control" id="inputDomicilio" placeholder="Buenos Aires">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Celular</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="+54 12345678">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Método de pago</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>Crédito</option>
-                                <option>Transferencia</option>
-                                <option>Débito</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputZip" class="form-label">Cuotas</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>3</option>
-                                <option>6</option>
-                                <option>12</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                Deseo recibir notificaciones a mi email
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <a href="../index.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></a>
-                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                </div>
+  
+  
+  <body class="bodydelenlacesuscribi">
+    <section class="formularioenlace">
+      <div class="container mt-5">
+      <h2 class="mb-4">¡Completá tus datos para empezar tu suscripción!</h2>
+      <form>
+          <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" required>
+          </div>
+          <div class="mb-3">
+              <label for="ciudad" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad" required>
+          </div>
+          <div class="mb-3">
+              <label for="codigoPostal" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="codigoPostal" required>
+          </div>
+          <div class="mb-3">
+              <label for="pais" class="form-label">País</label>
+              <input type="text" class="form-control" id="pais" required>
+          </div>
+          <div id="parte3" class="formulario-parte">
+            <p class="mb-3">Selecciona tu método de pago:</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="paypal" value="paypal" required>
+                <label class="form-check-label" for="paypal">
+                    Transferencia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaCredito" value="tarjetaCredito" required>
+                <label class="form-check-label" for="tarjetaCredito">
+                    Débito/Crédito
+                </label>
+            </div>
+            <div class="boton-confirmar">
+              <button type="submit" class="btn btn-primary boton-personalizado">Confirmar</button>
             </div>
         </div>
-    </div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </form>
+  </div>
+</section>
   </body>
 </html>
